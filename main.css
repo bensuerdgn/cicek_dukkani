@@ -1,0 +1,25 @@
+body{
+  margin:0;
+  padding: 0;
+}
+.header{
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  height: 100px;
+  width: 100%;
+}
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: red;
+}
+.showcase{
+  padding-top: 80px;
+}
+.first{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
