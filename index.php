@@ -1,3 +1,9 @@
+<?php 
+  include "./connect.php";
+  $flowers = $db->query("SELECT * FROM cicekler");
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,137 +27,23 @@
 
     <div class="showcase">
         <div class="first">
+          <?php
+            if($flowers->rowCount()) {
+              foreach( $flowers as $row ) {
+          ?>  
+
             <div class="photo">
-                <div class="img"><img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAeS7Ni8E6lVk-GcntCWwzJ4o2rKP53dcWDw85JhpoRGWfRifF&s"
-                        alt=""></div>
-                <div class="title">sarı çiçek</div>
-                <div class="content">sarı çiçek güzeldir
-                </div>
-            </div>
-            <div class="photo">
-                <div class="img"><img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAeS7Ni8E6lVk-GcntCWwzJ4o2rKP53dcWDw85JhpoRGWfRifF&s"
-                        alt=""></div>
-                <div class="title">sarı çiçek</div>
-                <div class="content">sarı çiçek güzeldir
-                </div>
-            </div>
-            <div class="photo">
-                <div class="img"><img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAeS7Ni8E6lVk-GcntCWwzJ4o2rKP53dcWDw85JhpoRGWfRifF&s"
-                        alt=""></div>
-                <div class="title">sarı çiçek</div>
-                <div class="content">sarı çiçek güzeldir
-                </div>
-            </div>
-            <div class="photo">
-                <div class="img"><img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAeS7Ni8E6lVk-GcntCWwzJ4o2rKP53dcWDw85JhpoRGWfRifF&s"
-                        alt=""></div>
-                <div class="title">sarı çiçek</div>
-                <div class="content">sarı çiçek güzeldir
-                </div>
-            </div>
-        </div>
-        <div class="first">
-            <div class="photo">
-                <div class="img"><img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAeS7Ni8E6lVk-GcntCWwzJ4o2rKP53dcWDw85JhpoRGWfRifF&s"
-                        alt=""></div>
-                <div class="title">sarı çiçek</div>
-                <div class="content">sarı çiçek güzeldir
-                </div>
-            </div>
-            <div class="photo">
-                <div class="img"><img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAeS7Ni8E6lVk-GcntCWwzJ4o2rKP53dcWDw85JhpoRGWfRifF&s"
-                        alt=""></div>
-                <div class="title">sarı çiçek</div>
-                <div class="content">sarı çiçek güzeldir
-                </div>
-            </div>
-            <div class="photo">
-                <div class="img"><img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAeS7Ni8E6lVk-GcntCWwzJ4o2rKP53dcWDw85JhpoRGWfRifF&s"
-                        alt=""></div>
-                <div class="title">sarı çiçek</div>
-                <div class="content">sarı çiçek güzeldir
-                </div>
-            </div>
-            <div class="photo">
-                <div class="img"><img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAeS7Ni8E6lVk-GcntCWwzJ4o2rKP53dcWDw85JhpoRGWfRifF&s"
-                        alt=""></div>
-                <div class="title">sarı çiçek</div>
-                <div class="content">sarı çiçek güzeldir </div>
-            </div>
-        </div>
-        <div class="first">
-            <div class="photo">
-                <div class="img"><img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAeS7Ni8E6lVk-GcntCWwzJ4o2rKP53dcWDw85JhpoRGWfRifF&s"
-                        alt=""></div>
-                <div class="title">sarı çiçek</div>
-                <div class="content">sarı çiçek güzeldir
-                </div>
-            </div>
-            <div class="photo">
-                <div class="img"><img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAeS7Ni8E6lVk-GcntCWwzJ4o2rKP53dcWDw85JhpoRGWfRifF&s"
-                        alt=""></div>
-                <div class="title">sarı çiçek</div>
-                <div class="content">sarı çiçek güzeldir
-                </div>
-            </div>
-            <div class="photo">
-                <div class="img"><img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAeS7Ni8E6lVk-GcntCWwzJ4o2rKP53dcWDw85JhpoRGWfRifF&s"
-                        alt=""></div>
-                <div class="title">sarı çiçek</div>
-                <div class="content">sarı çiçek güzeldir
-                </div>
-            </div>
-            <div class="photo">
-                <div class="img"><img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAeS7Ni8E6lVk-GcntCWwzJ4o2rKP53dcWDw85JhpoRGWfRifF&s"
-                        alt=""></div>
-                <div class="title">sarı çiçek</div>
-                <div class="content">sarı çiçek güzeldir </div>
-            </div>
-        </div>
-        <div class="first">
-            <div class="photo">
-                <div class="img"><img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAeS7Ni8E6lVk-GcntCWwzJ4o2rKP53dcWDw85JhpoRGWfRifF&s"
-                        alt=""></div>
-                <div class="title">sarı çiçek</div>
-                <div class="content">sarı çiçek güzeldir
-                </div>
-            </div>
-            <div class="photo">
-                <div class="img"><img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAeS7Ni8E6lVk-GcntCWwzJ4o2rKP53dcWDw85JhpoRGWfRifF&s"
-                        alt=""></div>
-                <div class="title">sarı çiçek</div>
-                <div class="content">sarı çiçek güzeldir
-                </div>
-            </div>
-            <div class="photo">
-                <div class="img"><img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAeS7Ni8E6lVk-GcntCWwzJ4o2rKP53dcWDw85JhpoRGWfRifF&s"
-                        alt=""></div>
-                <div class="title">sarı çiçek</div>
-                <div class="content">sarı çiçek güzeldir
-                </div>
-            </div>
-            <div class="photo">
-                <div class="img"><img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAeS7Ni8E6lVk-GcntCWwzJ4o2rKP53dcWDw85JhpoRGWfRifF&s"
-                        alt=""></div>
-                <div class="title">sarı çiçek</div>
-                <div class="content">sarı çiçek güzeldir </div>
-            </div>
+              <div class="img">
+                <img src="<?php echo $row["cicek_resim"]; ?>" alt=""></img>
+              </div>
+              <div class="title"><?php echo $row["cicek_adi"]; ?></div>
+              <div class="content"><?php echo $row["cicek_aciklama"]; ?></div>
+            </div>   
+
+          <?php    
+              }
+            } 
+          ?>
         </div>
     </div>
 
